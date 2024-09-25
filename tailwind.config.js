@@ -1,14 +1,18 @@
+const { text } = require("stream/consumers");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    colors: {
-      "gray-dark": "#333333",
-      "white-gray": "#F5F5F5",
-      "petrol-blue": "#00796B",
-      pink: "#E91E663",
+    extend: {
+      colors: {
+        background: "rgba(var(--background))",
+        card: "rgba(var(--card))",
+        text: "rgba(var(--text))",
+        button: "rgba(var(--button))",
+        buttonHover: "rgba(var(--button-hover))",
+      },
     },
-    extend: {},
   },
   plugins: [],
 };
