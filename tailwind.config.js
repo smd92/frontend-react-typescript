@@ -10,7 +10,7 @@ module.exports = {
         card: "rgba(var(--card))",
         text: "rgba(var(--text))",
         button: "rgba(var(--button))",
-        buttonHover: "rgba(var(--button-hover))",
+        "button-hover": "rgba(var(--button-hover))",
       },
     },
   },

@@ -5,7 +5,8 @@
 .darkBlue {
   --background: 11, 12, 16;
   --card: 31, 40, 51;
-  ---text: 197, 198, 199;
+  --text: 197, 198, 199;
   --button: 102, 252, 241;
-  --buttonHover: 69, 162, 158;
+  --button-hover: 69, 162, 158;
+  background: rgba(var(--background));
 }
