@@ -2,11 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* bert */
 .darkBlue {
-  --background: 11, 12, 16;
-  --card: 31, 40, 51;
+  --background: 86, 128, 233;
+  --card: 132, 206, 235;
   --text: 197, 198, 199;
   --button: 102, 252, 241;
   --button-hover: 69, 162, 158;
+  background: rgba(var(--background));
+}
+
+/* Gorgeous Contrast */
+.darkGreen {
+  --background: 34, 38, 41;
+  --card: 71, 75, 79;
+  --button: 134, 194, 50;
+  --button-hover: 97, 137, 47;
+  --text: 107, 110, 112;
   background: rgba(var(--background));
 }
