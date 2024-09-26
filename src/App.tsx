@@ -7,6 +7,7 @@ import translationES from "./locales/es/translation.json";
 import translationDE from "./locales/de/translation.json";
 
 import LanguageSwitcher from "./LanguageSwitcher";
+import ProductPage from "./ProductPage";
 
 const resources = {
   en: {
@@ -72,6 +73,7 @@ const App = () => {
           {t("hello_world")}
         </h1>
       </div>
+      <ProductPage />
     </>
   );
 };
