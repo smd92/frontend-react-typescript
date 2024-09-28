@@ -56,23 +56,6 @@ const App = () => {
           {t("hello_world")}
         </h1>
       </div>
-      <div className="darkGreen">
-        <h1 className="text-3xl font-bold underline text-background">
-          {t("hello_world")}
-        </h1>
-        <h1 className="text-3xl font-bold underline text-card">
-          {t("hello_world")}
-        </h1>
-        <h1 className="text-3xl font-bold underline text-text">
-          {t("hello_world")}
-        </h1>
-        <h1 className="text-3xl font-bold underline text-button">
-          {t("hello_world")}
-        </h1>
-        <h1 className="text-3xl font-bold underline text-button-hover">
-          {t("hello_world")}
-        </h1>
-      </div>
       <ProductPage />
     </>
   );
