@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import Button from "./components/Button";
+import Button from "./Button";
 
 const locales = [
   {
@@ -39,8 +39,8 @@ const LanguageSwitcher = () => {
               <img
                 src={process.env.PUBLIC_URL + locale.img!}
                 alt={`${locale.value} flag}`}
-                width="100"
-                height="100"
+                width="60"
+                height="60"
               />
             }
             px={undefined}

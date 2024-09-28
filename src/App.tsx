@@ -6,8 +6,8 @@ import translationFR from "./locales/fr/translation.json";
 import translationES from "./locales/es/translation.json";
 import translationDE from "./locales/de/translation.json";
 
-import LanguageSwitcher from "./LanguageSwitcher";
-import ProductPage from "./ProductPage";
+import Header from "./components/Header";
+import ProductPage from "./components/ProductPage";
 
 const resources = {
   en: {
@@ -38,7 +38,7 @@ const App = () => {
 
   return (
     <>
-      <LanguageSwitcher />
+      <Header />
       <div className="darkBlue">
         <h1 className="text-3xl font-bold underline text-background">
           {t("hello_world")}
