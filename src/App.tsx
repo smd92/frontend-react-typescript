@@ -7,6 +7,7 @@ import translationES from "./locales/es/translation.json";
 import translationDE from "./locales/de/translation.json";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import ProductPage from "./components/ProductPage";
 
 const resources = {
@@ -38,25 +39,28 @@ const App = () => {
 
   return (
     <>
-      <Header />
-      <div className="darkBlue">
-        <h1 className="text-3xl font-bold underline text-background">
-          {t("hello_world")}
-        </h1>
-        <h1 className="text-3xl font-bold underline text-card">
-          {t("hello_world")}
-        </h1>
-        <h1 className="text-3xl font-bold underline text-text">
-          {t("hello_world")}
-        </h1>
-        <h1 className="text-3xl font-bold underline text-button">
-          {t("hello_world")}
-        </h1>
-        <h1 className="text-3xl font-bold underline text-button-hover">
-          {t("hello_world")}
-        </h1>
+      <div className="overflow-hidden">
+        <Header />
+        <div className="darkBlue">
+          <h1 className="text-3xl font-bold underline text-background">
+            {t("hello_world")}
+          </h1>
+          <h1 className="text-3xl font-bold underline text-card">
+            {t("hello_world")}
+          </h1>
+          <h1 className="text-3xl font-bold underline text-text">
+            {t("hello_world")}
+          </h1>
+          <h1 className="text-3xl font-bold underline text-button">
+            {t("hello_world")}
+          </h1>
+          <h1 className="text-3xl font-bold underline text-button-hover">
+            {t("hello_world")}
+          </h1>
+        </div>
+        <ProductPage />
+        <Footer />
       </div>
-      <ProductPage />
     </>
   );
 };

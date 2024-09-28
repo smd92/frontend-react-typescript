@@ -1,18 +1,15 @@
 const { text } = require("stream/consumers");
+const withMT = require("@material-tailwind/react/utils/withMT");
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+module.exports = withMT({
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      colors: {
-        background: "rgba(var(--background))",
-        card: "rgba(var(--card))",
-        text: "rgba(var(--text))",
-        button: "rgba(var(--button))",
-        "button-hover": "rgba(var(--button-hover))",
-      },
+      fontFamily: {
+        "conert-one": ["Concert One", "sans-serif"],
+      }
     },
   },
   plugins: [],
-};
+});

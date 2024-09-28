@@ -7,6 +7,8 @@ import i18next from "i18next";
 import "./index.css";
 import App from "./App";
 
+import { ThemeProvider } from "@material-tailwind/react";
+
 i18next.init({
   interpolation: { escapeValue: false }, // React already does escaping
 });
@@ -15,7 +17,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Router>
       <I18nextProvider i18n={i18next}>
-        <App />
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
       </I18nextProvider>
     </Router>
   </React.StrictMode>

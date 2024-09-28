@@ -10,7 +10,9 @@ const Header = () => {
           width="100"
           height="100"
         />
-        <h1 className="text-7xl font-bold font-mono italic bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">INNOVEND</h1>
+        <h1 className="font-conert-one text-7xl font-bold font-mono bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+          INNOVEND
+        </h1>
       </div>
       <LanguageSwitcher />
     </header>
