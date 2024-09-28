@@ -7,7 +7,7 @@ module.exports = withMT({
   theme: {
     extend: {
       fontFamily: {
-        "conert-one": ["Concert One", "sans-serif"],
+        "concert-one": ["Concert One", "sans-serif"],
       }
     },
   },
