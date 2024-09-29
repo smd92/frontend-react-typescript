@@ -6,8 +6,8 @@ import translationES from "./locales/es/translation.json";
 import translationDE from "./locales/de/translation.json";
 
 import Header from "./components/Header";
+import Main from "./scenes/Main";
 import Footer from "./components/Footer";
-import ProductPage from "./components/ProductPage";
 
 const resources = {
   en: {
@@ -38,7 +38,7 @@ const App = () => {
     <>
       <div className="overflow-hidden">
         <Header />
-        <ProductPage />
+        <Main />
         <Footer />
       </div>
     </>

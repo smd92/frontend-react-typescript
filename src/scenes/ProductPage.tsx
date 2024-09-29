@@ -1,5 +1,5 @@
 import React from "react";
-import Product from "./Product";
+import Product from "../components/Product";
 
 const productData = [
   {
@@ -48,8 +48,8 @@ const productData = [
 
 const ProductPage = () => {
   return (
-    <div>
-      <img src={process.env.PUBLIC_URL + productData[0].img!} alt="product" />
+    <div className="h-screen">
+      {/* <img src={process.env.PUBLIC_URL + productData[0].img!} alt="product" /> */}
     </div>
   );
 };
