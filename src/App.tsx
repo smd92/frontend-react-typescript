@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import translationEN from "./locales/en/translation.json";
@@ -35,29 +34,10 @@ i18n.use(initReactI18next).init({
 });
 
 const App = () => {
-  const { t } = useTranslation();
-
   return (
     <>
       <div className="overflow-hidden">
         <Header />
-        <div className="darkBlue">
-          <h1 className="text-3xl font-bold underline text-background">
-            {t("hello_world")}
-          </h1>
-          <h1 className="text-3xl font-bold underline text-card">
-            {t("hello_world")}
-          </h1>
-          <h1 className="text-3xl font-bold underline text-text">
-            {t("hello_world")}
-          </h1>
-          <h1 className="text-3xl font-bold underline text-button">
-            {t("hello_world")}
-          </h1>
-          <h1 className="text-3xl font-bold underline text-button-hover">
-            {t("hello_world")}
-          </h1>
-        </div>
         <ProductPage />
         <Footer />
       </div>

@@ -1,3 +1,8 @@
 {
-  "hello_world": "Hola Mundo"
+  "hello_world": "Hola Mundo",
+  "resource": "Recursos",
+  "about_us": "Acerca de nosotros",
+  "imprint": "Imprimir",
+  "faq": "FAQ",
+  "contact": "Contacto"
 }

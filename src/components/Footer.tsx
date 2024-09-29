@@ -1,23 +1,26 @@
 import { Typography } from "@material-tailwind/react";
+import { useTranslation } from "react-i18next";
 
 const LINKS = [
   {
-    title: "Product",
-    items: ["Overview", "Features", "Solutions", "Tutorials"],
+    title: "",
+    items: [],
   },
   {
-    title: "Company",
-    items: ["About us", "Careers", "Press", "News"],
+    title: "",
+    items: [""],
   },
   {
-    title: "Resource",
-    items: ["Blog", "Newsletter", "Events", "Help center"],
+    title: "resource",
+    items: ["about_us", "imprint", "faq", "contact"],
   },
 ];
 
 const currentYear = new Date().getFullYear();
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="relative w-full">
       <div className="mx-auto w-full max-w-7xl px-8">
@@ -35,7 +38,7 @@ const Footer = () => {
                   color="blue-gray"
                   className="mb-3 font-medium opacity-40"
                 >
-                  {title}
+                  {t(title)}
                 </Typography>
                 {items.map((link) => (
                   <li key={link}>
@@ -46,7 +49,7 @@ const Footer = () => {
                       color="gray"
                       className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
                     >
-                      {link}
+                      {t(link)}
                     </Typography>
                   </li>
                 ))}
