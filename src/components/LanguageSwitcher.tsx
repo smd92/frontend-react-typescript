@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import Button from "./Button";
+import { IconButton } from "@material-tailwind/react";
 
 const locales = [
   {
@@ -22,30 +23,29 @@ const locales = [
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
+  const [activeLang, setActiveLang] = useState<string>("de");
 
   const handleLanguageChange = (newLang: string) => {
     i18n.changeLanguage(newLang);
+    setActiveLang(newLang);
   };
 
   return (
     <div className="flex flex-row">
       {locales.map((locale) => (
-        <div key={locale.value}>
-          <Button
-            className=""
-            href={undefined}
-            onClick={() => handleLanguageChange(locale.value)}
-            children={
-              <img
-                src={process.env.PUBLIC_URL + locale.img!}
-                alt={`${locale.value} flag}`}
-                width="60"
-                height="60"
-              />
-            }
-            px={undefined}
+        <button
+          key={locale.value}
+          onClick={() => handleLanguageChange(locale.value)}
+          className={`shadow-none rounded-full w-24 h-24 p-2 flex items-center justify-center transition-all duration-300 ease-in-out ${
+            activeLang === locale.value ? "bg-gray-400" : "hover:bg-gray-400"
+          }`}
+        >
+          <img
+            src={process.env.PUBLIC_URL + locale.img!}
+            alt={`${locale.value} flag}`}
+            className="w-14 h-14"
           />
-        </div>
+        </button>
       ))}
     </div>
   );
