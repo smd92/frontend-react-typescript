@@ -7,3 +7,12 @@ export type ButtonProps = {
   children: ReactNode | string;
   px: string | undefined;
 };
+
+export type ProductData = {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  inStockCount: number;
+  img: string;
+}

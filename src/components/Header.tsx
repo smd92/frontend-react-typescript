@@ -2,7 +2,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
   return (
-    <header className="flex flex-row items-center justify-between p-2 h-30">
+    <header className="theme-bert flex flex-row items-center justify-between h-30 mb-20 p-8">
       <div className="flex flex-row items-center">
         <img
           src={process.env.PUBLIC_URL + "/img/logo-vending-machine.png"}

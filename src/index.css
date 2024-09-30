@@ -30,24 +30,17 @@
     --color-button-accent-hover: 55, 79, 5;
     --color-button-muted: 212, 255, 122;
   }
+  .theme-bert {
+    --color-company-name: 102, 252, 241;
+    --color-background: 31, 40, 51;
+  }
 }
 
-/* bert */
-.darkBlue {
-  --background: 11, 12, 16;
-  --card: 132, 206, 235;
-  --text: 197, 198, 199;
-  --button: 102, 252, 241;
-  --button-hover: 69, 162, 158;
-  background: rgba(var(--background));
-}
-
-/* Gorgeous Contrast */
-.darkGreen {
-  --background: 34, 38, 41;
-  --card: 71, 75, 79;
-  --button: 134, 194, 50;
-  --button-hover: 97, 137, 47;
-  --text: 107, 110, 112;
-  background: rgba(var(--background));
+.background-gradient {
+  background: rgb(11, 12, 16);
+  background: linear-gradient(
+    180deg,
+    rgba(11, 12, 16, 1) 0%,
+    rgba(31, 40, 51, 1) 46%
+  );
 }
