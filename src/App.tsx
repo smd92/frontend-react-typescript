@@ -9,6 +9,8 @@ import Header from "./components/Header";
 import Main from "./scenes/Main";
 import Footer from "./components/Footer";
 
+import { ThemeProvider, useTheme } from "./contexts/ThemeContext";
+
 const resources = {
   en: {
     translation: translationEN,
@@ -34,14 +36,15 @@ i18n.use(initReactI18next).init({
 });
 
 const App = () => {
+  const { theme } = useTheme();
   return (
-    <>
-      <div className="overflow-hidden bg-gradient-to-r from-blue-200 to-cyan-200">
+    <ThemeProvider>
+      <div className={`overflow-hidden bg-color-${theme}`}>
         <Header />
         <Main />
         <Footer />
       </div>
-    </>
+    </ThemeProvider>
   );
 };
 

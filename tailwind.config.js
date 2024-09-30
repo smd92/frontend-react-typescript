@@ -6,15 +6,37 @@ module.exports = withMT({
   theme: {
     extend: {
       textColor: {
-        "company-name": "--color-company-name",
+        "color-theme1": "17252A",
       },
       backgroundColor: {
-        "background-color": "--color-background",
+        "color-theme1": "#DEF2F1",
+        "color-card-theme1": "#FEFFFF",
+        "color-button-theme1": "#3AAFA9",
+      },
+      borderColor: {
+        "color-theme1": "#2B7A78",
       },
       fontFamily: {
         "concert-one": ["Concert One", "sans-serif"],
       },
     },
   },
+  safeList: [
+    {
+      pattern: /text-color-(theme1)/,
+    },
+    {
+      pattern: /bg-color-(theme1)/,
+    },
+    {
+      pattern: /bg-color-card-(theme1)/,
+    },
+    {
+      pattern: /bg-color-button-(theme1)/,
+    },
+    {
+      pattern: /border-color-(theme1)/,
+    }
+  ],
   plugins: [],
 });
