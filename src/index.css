@@ -30,17 +30,4 @@
     --color-button-accent-hover: 55, 79, 5;
     --color-button-muted: 212, 255, 122;
   }
-  .theme-bert {
-    --color-company-name: 102, 252, 241;
-    --color-background: 31, 40, 51;
-  }
-}
-
-.background-gradient {
-  background: rgb(11, 12, 16);
-  background: linear-gradient(
-    180deg,
-    rgba(11, 12, 16, 1) 0%,
-    rgba(31, 40, 51, 1) 46%
-  );
 }

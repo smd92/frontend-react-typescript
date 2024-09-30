@@ -6,7 +6,7 @@ module.exports = withMT({
   theme: {
     extend: {
       textColor: {
-        "color-theme1": "17252A",
+        "color-theme1": "#17252A",
       },
       backgroundColor: {
         "color-theme1": "#DEF2F1",

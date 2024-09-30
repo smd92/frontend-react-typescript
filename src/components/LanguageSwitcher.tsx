@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { IconButton } from "@material-tailwind/react";
 
 const locales = [
   {
