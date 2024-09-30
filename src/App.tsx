@@ -36,7 +36,7 @@ i18n.use(initReactI18next).init({
 const App = () => {
   return (
     <>
-      <div className="overflow-hidden background-gradient">
+      <div className="overflow-hidden bg-gradient-to-r from-blue-200 to-cyan-200">
         <Header />
         <Main />
         <Footer />
