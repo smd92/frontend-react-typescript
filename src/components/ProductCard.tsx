@@ -13,7 +13,7 @@ import { useTheme } from "../contexts/ThemeContext";
 const ProductCard = (productData: ProductData) => {
   const { theme } = useTheme();
   return (
-    <Card className={`w-80`}>
+    <Card className={`w-80 bg-color-card-theme1`}>
       <CardHeader shadow={false} floated={false} className="min-h-64">
         <img
           src={process.env.PUBLIC_URL + productData.img}
@@ -42,7 +42,7 @@ const ProductCard = (productData: ProductData) => {
         <Button
           ripple={true}
           fullWidth={true}
-          className={`shadow-none bg-color-button-theme1 text-color-primary-theme1 hover:shadow-none`}
+          className={`shadow-none bg-color-button-primary-theme1 text-color-primary-theme1 hover:shadow-none`}
         >
           AUSWÄHLEN
         </Button>

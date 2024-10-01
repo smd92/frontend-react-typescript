@@ -15,15 +15,16 @@ export function StepperWithContent() {
   const handlePrev = () => !isFirstStep && setActiveStep((cur) => cur - 1);
 
   return (
-    <div className="w-2/3 px-24 py-2">
+    <div className="w-10/12 px-24 mb-20">
       <Stepper
         activeStep={activeStep}
         isLastStep={(value) => setIsLastStep(value)}
         isFirstStep={(value) => setIsFirstStep(value)}
+        activeLineClassName={`bg-color-button-primary-focus-theme1`}
       >
-        <Step onClick={() => setActiveStep(0)}>
-          <ShoppingCartIcon className="h-5 w-5" />
-          <div className="absolute -bottom-[4.5rem] w-max text-center">
+        <Step onClick={() => setActiveStep(0)} activeClassName={`bg-color-button-primary-focus-theme1`} completedClassName={`bg-color-button-primary-focus-theme1`}>
+          <ShoppingCartIcon className={`h-5 w-5`} />
+          <div className="absolute -bottom-[3rem] w-max text-center">
             <Typography
               variant="h6"
               color={activeStep === 0 ? "blue-gray" : "gray"}
@@ -38,9 +39,9 @@ export function StepperWithContent() {
             </Typography> */}
           </div>
         </Step>
-        <Step onClick={() => setActiveStep(1)}>
+        <Step onClick={() => setActiveStep(1)} activeClassName={`bg-color-button-primary-focus-theme1`} completedClassName={`bg-color-button-primary-focus-theme1`}>
           <CreditCardIcon className="h-5 w-5" />
-          <div className="absolute -bottom-[4.5rem] w-max text-center">
+          <div className="absolute -bottom-[3rem] w-max text-center">
             <Typography
               variant="h6"
               color={activeStep === 1 ? "blue-gray" : "gray"}
@@ -55,9 +56,9 @@ export function StepperWithContent() {
             </Typography> */}
           </div>
         </Step>
-        <Step onClick={() => setActiveStep(2)}>
+        <Step onClick={() => setActiveStep(2)} activeClassName={`bg-color-button-primary-focus-theme1`} completedClassName={`bg-color-button-primary-focus-theme1`}>
           <CheckIcon className="h-5 w-5" />
-          <div className="absolute -bottom-[4.5rem] w-max text-center">
+          <div className="absolute -bottom-[3rem] w-max text-center">
             <Typography
               variant="h6"
               color={activeStep === 2 ? "blue-gray" : "gray"}

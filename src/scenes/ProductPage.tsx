@@ -54,7 +54,7 @@ const productData = [
 const ProductPage = () => {
   const rowCount = Math.ceil(productData.length / 4);
   return (
-    <div className={`grid grid-cols-4 grid-rows-${rowCount} items-center gap-6`}>
+    <div className={`w-10/12 grid grid-cols-4 grid-rows-${rowCount} items-center gap-6`}>
       {productData.map((product) => (
         <ProductCard key={product.id} {...product} />
       ))}

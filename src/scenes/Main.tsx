@@ -3,7 +3,7 @@ import { StepperWithContent } from "../components/StepperWithContent";
 
 const Main = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center w-full my-10">
       <StepperWithContent />
       <ProductPage />
     </div>
