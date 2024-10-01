@@ -28,7 +28,7 @@ const productData = [
   {
     id: 4,
     name: "Elf Bar 600 Peach",
-    description: "Peach du Pic. Dem ist nichts hinzuzufügen.",
+    description: "Peach. Dem ist nichts hinzuzufügen.",
     price: 15,
     inStockCount: 3,
     img: "/img/elfbar-peach-ice-einweg-e-zigarette-fs.jpg",
@@ -52,8 +52,9 @@ const productData = [
 ];
 
 const ProductPage = () => {
+  const rowCount = Math.ceil(productData.length / 4);
   return (
-    <div className="grid grid-cols-4 grid-rows-5 items-center gap-6">
+    <div className={`grid grid-cols-4 grid-rows-${rowCount} items-center gap-6`}>
       {productData.map((product) => (
         <ProductCard key={product.id} {...product} />
       ))}

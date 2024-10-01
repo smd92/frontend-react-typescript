@@ -39,7 +39,7 @@ const App = () => {
   const { theme } = useTheme();
   return (
     <ThemeProvider>
-      <div className={`overflow-hidden bg-color-${theme}`}>
+      <div className={`overflow-hidden bg-color-theme1`}>
         <Header />
         <Main />
         <Footer />

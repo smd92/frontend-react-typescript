@@ -14,7 +14,7 @@ const Header = () => {
           width="100"
           height="100"
         />
-        <h1 className="font-concert-one text-7xl">INNOVEND</h1>
+        <h1 className={`font-concert-one text-7xl text-color-primary-theme1`}>INNOVEND</h1>
       </div>
       <LanguageSwitcher />
     </header>

@@ -36,7 +36,7 @@ const LanguageSwitcher = () => {
           key={locale.value}
           onClick={() => handleLanguageChange(locale.value)}
           className={`shadow-none rounded-full w-24 h-24 p-2 flex items-center justify-center transition-all duration-300 ease-in-out ${
-            activeLang === locale.value ? "bg-gray-400" : "hover:bg-gray-400"
+            activeLang === locale.value ?  `bg-color-button-focus-theme1`: ""
           }`}
         >
           <img

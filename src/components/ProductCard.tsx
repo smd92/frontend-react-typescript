@@ -8,9 +8,12 @@ import {
 } from "@material-tailwind/react";
 import { ProductData } from "../types";
 
+import { useTheme } from "../contexts/ThemeContext";
+
 const ProductCard = (productData: ProductData) => {
+  const { theme } = useTheme();
   return (
-    <Card className="w-80">
+    <Card className={`w-80`}>
       <CardHeader shadow={false} floated={false} className="min-h-64">
         <img
           src={process.env.PUBLIC_URL + productData.img}
@@ -20,7 +23,7 @@ const ProductCard = (productData: ProductData) => {
       </CardHeader>
       <CardBody>
         <div className="mb-2 flex items-center justify-between">
-          <Typography color="blue-gray" className="font-medium">
+          <Typography className={`font-medium text-color-primary-theme1`}>
             {productData.name}
           </Typography>
           <Typography color="blue-gray" className="font-medium">
@@ -37,9 +40,9 @@ const ProductCard = (productData: ProductData) => {
       </CardBody>
       <CardFooter className="pt-0">
         <Button
-          ripple={false}
+          ripple={true}
           fullWidth={true}
-          className="bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+          className={`shadow-none bg-color-button-theme1 text-color-primary-theme1 hover:shadow-none`}
         >
           AUSWÄHLEN
         </Button>

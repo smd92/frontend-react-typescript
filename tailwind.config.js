@@ -6,12 +6,13 @@ module.exports = withMT({
   theme: {
     extend: {
       textColor: {
-        "color-theme1": "#17252A",
+        "color-primary-theme1": "#17252A",
       },
       backgroundColor: {
         "color-theme1": "#DEF2F1",
         "color-card-theme1": "#FEFFFF",
         "color-button-theme1": "#3AAFA9",
+        "color-button-focus-theme1": "#3AAFA9",
       },
       borderColor: {
         "color-theme1": "#2B7A78",
@@ -23,7 +24,7 @@ module.exports = withMT({
   },
   safeList: [
     {
-      pattern: /text-color-(theme1)/,
+      pattern: /text-color-primary-(theme1)/,
     },
     {
       pattern: /bg-color-(theme1)/,
@@ -33,6 +34,9 @@ module.exports = withMT({
     },
     {
       pattern: /bg-color-button-(theme1)/,
+    },
+    {
+      pattern: /bg-color-button-focus-(theme1)/,
     },
     {
       pattern: /border-color-(theme1)/,
