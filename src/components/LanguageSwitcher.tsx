@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "../contexts/ThemeContext";
 
 const locales = [
   {
@@ -21,6 +22,7 @@ const locales = [
 ];
 
 const LanguageSwitcher = () => {
+  const { theme } = useTheme();
   const { i18n } = useTranslation();
   const [activeLang, setActiveLang] = useState<string>("de");
 
@@ -36,7 +38,9 @@ const LanguageSwitcher = () => {
           key={locale.value}
           onClick={() => handleLanguageChange(locale.value)}
           className={`shadow-none rounded-full w-24 h-24 p-2 flex items-center justify-center transition-all duration-300 ease-in-out ${
-            activeLang === locale.value ?  `bg-color-button-primary-focus-theme1`: ""
+            activeLang === locale.value
+              ? `bg-color-button-primary-focus-theme1`
+              : ""
           }`}
         >
           <img

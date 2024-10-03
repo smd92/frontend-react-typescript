@@ -3,10 +3,11 @@ import { StepperWithContent } from "../components/StepperWithContent";
 import { Typography } from "@material-tailwind/react";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { useTheme } from "../contexts/ThemeContext";
 
 const Main = () => {
+  const { theme } = useTheme();
   const [isVerifiedAge, setIsVerifiedAge] = useState(false);
-
   const { t } = useTranslation();
 
   return (
@@ -18,7 +19,7 @@ const Main = () => {
         </div>
       ) : (
         <Typography
-          className="text-7xl text-color-primary-theme1 font-bold cursor-pointer"
+          className={`text-7xl text-color-logo-theme1 font-bold cursor-pointer`}
           onClick={() => setIsVerifiedAge(true)}
         >
           {t("verify_age")}

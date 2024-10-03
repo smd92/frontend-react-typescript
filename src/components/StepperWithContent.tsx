@@ -5,8 +5,10 @@ import {
   CreditCardIcon,
 CheckIcon,
 } from "@heroicons/react/24/outline";
+import { useTheme } from "../contexts/ThemeContext";
 
 export function StepperWithContent() {
+  const { theme } = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const [isLastStep, setIsLastStep] = React.useState(false);
   const [isFirstStep, setIsFirstStep] = React.useState(false);
