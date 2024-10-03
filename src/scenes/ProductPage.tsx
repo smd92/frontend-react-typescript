@@ -38,7 +38,7 @@ const productData = [
     name: "Elfbar Pod Blueberry",
     description: "Blaubeeren sind reich an Oxidantien",
     price: 5,
-    inStockCount: 5,
+    inStockCount: 0,
     img: "/img/elf-bar-elfa-prefilled-pod-blueberry-2er-pack.jpg",
   },
   {
@@ -70,7 +70,7 @@ const productData = [
     name: "Elfbar Pod BB/CC",
     description: "Cotton Candy auch gut",
     price: 3,
-    inStockCount: 10,
+    inStockCount: 2,
     img: "/img/elf-bar-elfa-prefilled-pod-blueberry-cotton-candy-1.jpg",
   },
   {
