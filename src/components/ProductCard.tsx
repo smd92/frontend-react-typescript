@@ -17,7 +17,7 @@ const ProductCard = (productData: ProductData) => {
   const isLowStock = productData.inStockCount > 0 && productData.inStockCount <= 3;
 
   return (
-    <div className="relative w-80">
+    <div className="relative w-65">
       {/* Grünes Banner bei niedrigem Lagerbestand anzeigen */}
       {isLowStock && (
         <Typography className="absolute top-0 left-0 w-full bg-color-button-primary-theme1 text-color-primary-theme1 px-4 py-2 text-center font-bold z-10 rounded-t-lg">
@@ -26,7 +26,7 @@ const ProductCard = (productData: ProductData) => {
       )}
 
       {/* Card wird ausgegraut, wenn Lagerbestand 0 ist */}
-      <Card className={`w-80 bg-color-card-theme1 ${isOutOfStock ? 'opacity-50 grayscale' : ''}`}>
+      <Card className={`w-65 bg-color-card-theme1 ${isOutOfStock ? 'opacity-50 grayscale' : ''}`}>
         <CardHeader shadow={false} floated={false} className="min-h-64 relative z-0 rounded-t-lg">
           <img
             src={process.env.PUBLIC_URL + productData.img}
