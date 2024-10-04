@@ -8,9 +8,11 @@ import {
 } from "@material-tailwind/react";
 import { ProductData } from "../types";
 import { useTheme } from "../contexts/ThemeContext";
+import { useTranslation } from "react-i18next";
 
 const ProductCard = (productData: ProductData) => {
   const { theme } = useTheme();
+  const { t } = useTranslation();
   
   // Bedingung prüfen, ob der Lagerbestand 0 ist oder weniger als 3 vorhanden sind
   const isOutOfStock = productData.inStockCount === 0;
@@ -58,7 +60,7 @@ const ProductCard = (productData: ProductData) => {
             disabled={isOutOfStock} // Knopf deaktivieren, wenn der Artikel ausverkauft ist
             className={`shadow-none bg-color-button-primary-theme1 text-color-primary-theme1 hover:shadow-none`}
           >
-            AUSWÄHLEN
+            {t("choose")}
           </Button>
         </CardFooter>
       </Card>

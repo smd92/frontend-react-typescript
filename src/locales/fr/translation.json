@@ -5,5 +5,9 @@
   "imprint": "Impression",
   "faq": "FAQ",
   "contact": "Contact",
-  "verify_age": "Vérifiez votre age"
+  "verify_age": "Vérifiez votre age",
+  "choose_product": "Choisir un produit",
+  "pay": "Payer",
+  "done": "Fait",
+  "choose": "Choisir"
 }

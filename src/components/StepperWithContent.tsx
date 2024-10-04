@@ -6,9 +6,11 @@ import {
 CheckIcon,
 } from "@heroicons/react/24/outline";
 import { useTheme } from "../contexts/ThemeContext";
+import { useTranslation } from "react-i18next";
 
 export function StepperWithContent() {
   const { theme } = useTheme();
+  const { t } = useTranslation();
   const [activeStep, setActiveStep] = React.useState(0);
   const [isLastStep, setIsLastStep] = React.useState(false);
   const [isFirstStep, setIsFirstStep] = React.useState(false);
@@ -31,7 +33,7 @@ export function StepperWithContent() {
               variant="h6"
               color={activeStep === 0 ? "blue-gray" : "gray"}
             >
-              Produkt auswählen
+              {t("choose_product")}
             </Typography>
             {/*             <Typography
               color={activeStep === 0 ? "blue-gray" : "gray"}
@@ -48,7 +50,7 @@ export function StepperWithContent() {
               variant="h6"
               color={activeStep === 1 ? "blue-gray" : "gray"}
             >
-              Bezahlen
+              {t("pay")}
             </Typography>
             {/*             <Typography
               color={activeStep === 1 ? "blue-gray" : "gray"}
@@ -65,7 +67,7 @@ export function StepperWithContent() {
               variant="h6"
               color={activeStep === 2 ? "blue-gray" : "gray"}
             >
-              Fertig
+              {t("done")}
             </Typography>
             {/*             <Typography
               color={activeStep === 2 ? "blue-gray" : "gray"}
